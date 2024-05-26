@@ -10,7 +10,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
     keyboard = InlineKeyboardMarkup()
-    keyboard.add(InlineKeyboardButton("Start Game", web_app=WebAppInfo(url="https://yourgameurl.com")))
+    keyboard.add(InlineKeyboardButton("Start Game", web_app=WebAppInfo(url="https://github.com/emilki/PotatoCoin.git")))
     await message.reply("Welcome to Potato Clicker! Click the button below to start the game.", reply_markup=keyboard)
 
 if __name__ == '__main__':
